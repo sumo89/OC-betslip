@@ -1,0 +1,46 @@
+---------
+INTRO
+--------
+
+** For this test you may download any modules/libraries/frameworks you require and Google anything you do not know. **
+
+To complete this test you are required to produce a small betslip application utilizing the api provided for you in the api directory.
+
+An annotated wireframe for the application is provided in the file mock-up.png.
+
+
+---------
+API
+--------
+
+The api should expose 2 endpoints:
+    - /decimalOddsLessThanTwo
+    - /decimalOddsMoreThanTwo
+
+
+---------
+DEV
+--------
+
+In the project directory run the following commands to setup the development environment:
+
+1. npm install
+2. npm run start-frontend
+3. npm run start-server
+
+Once these processes have been started you will be ready to start developing.
+
+The webpage for the website will be available on port 3000 whilst the api can be reached on port 4000 to request the bet data.
+
+
+---------
+TASKS
+--------
+
+1. Implement the function bodies for the two api endpoints in the directory api/server.js. The implementation should be completed in such a way as to avoid duplicating code across the two endpoints. The endpoints should each return a json response containing a selection of bets based on whether they contain a bookmaker odds entry with an oddsDecimal value above or below 2.0.
+
+2. Create the betslip application with the functionality described in the mock-up file.
+
+3. Style the betslip to replicate the layout in the mock-up plus any extra branding you'd like to add.
+
+4. Provide some unit tests for the functionality in the betslip. If not familiar with specific test frameworks please provide some high level pseduo test declarations that you think would be beneficial if you had to maintain this functionality long term.

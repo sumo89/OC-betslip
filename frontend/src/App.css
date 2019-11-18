@@ -1,0 +1,75 @@
+.App {
+    background-color: lightblue;
+    min-height: 15em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    border-radius: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+}
+h1, h2 {
+    margin: 0.5em 0;
+}
+.odd-option-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.odd-option-wrap h1{
+    margin-right: 1em;
+}
+.odd-option-wrap select{
+    font-size: 14px;
+}
+.bet-option-wrap ul{
+    list-style: none;
+    padding: 0;
+}
+.bet-option-wrap .individual-bet {
+    border: 1px solid #9c9c9c;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+.individual-bet form{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.individual-bet form input{
+    font-size: 14px;
+    padding: 0.5em;
+}
+.individual-bet form button{
+    background-color: #fff;
+    border: 1px solid #323232;
+    font-size: 14px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+.individual-bet form button span{
+    position: relative;
+    pointer-events: none;
+}
+.individual-bet form button span::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: #323232;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 200ms ease;
+}
+.individual-bet form button:hover span::after{
+    width: 100%;
+}
+.bet-receipt ul{
+    list-style: none;
+    padding: 0;
+}

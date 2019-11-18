@@ -1,0 +1,21 @@
+{
+  "name": "react-betslip-code-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "cd frontend && npm install",
+    "start-server": "node ./api/server.js",
+    "start-frontend": "cd frontend && react-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.cloud.oddschecker.com:ollie.ayre/react-betslip-code-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3"
+  }
+}
